@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        heading: ['Montserrat', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -46,6 +50,12 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        msip: {
+          orange: "hsl(var(--msip-orange))",
+          silver: "hsl(var(--msip-silver))",
+          black: "hsl(var(--msip-black))",
+          gray: "hsl(var(--msip-gray))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
