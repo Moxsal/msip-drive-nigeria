@@ -28,18 +28,21 @@ const Header = () => {
             <Link to="/" className="text-foreground hover:text-primary font-medium transition-smooth">
               Home
             </Link>
-            <a href="#fleet" className="text-foreground hover:text-primary font-medium transition-smooth">
+            <Link to="/fleet" className="text-foreground hover:text-primary font-medium transition-smooth">
               Fleet
-            </a>
-            <a href="#services" className="text-foreground hover:text-primary font-medium transition-smooth">
+            </Link>
+            <Link to="/booking" className="text-foreground hover:text-primary font-medium transition-smooth">
+              Book Now
+            </Link>
+            <Link to="/services" className="text-foreground hover:text-primary font-medium transition-smooth">
               Services
-            </a>
-            <a href="#about" className="text-foreground hover:text-primary font-medium transition-smooth">
+            </Link>
+            <Link to="/about" className="text-foreground hover:text-primary font-medium transition-smooth">
               About
-            </a>
-            <a href="#contact" className="text-foreground hover:text-primary font-medium transition-smooth">
+            </Link>
+            <Link to="/contact" className="text-foreground hover:text-primary font-medium transition-smooth">
               Contact
-            </a>
+            </Link>
           </nav>
 
           {/* Action Buttons */}
@@ -70,7 +73,7 @@ const Header = () => {
               </a>
             </Button>
             <Button variant="hero" size="sm" asChild>
-              <a href="#booking">Book Now</a>
+              <Link to="/booking">Book Now</Link>
             </Button>
           </div>
 
@@ -95,34 +98,41 @@ const Header = () => {
               >
                 Home
               </Link>
-              <a
-                href="#fleet"
+              <Link
+                to="/fleet"
                 className="text-foreground hover:text-primary font-medium transition-smooth"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Fleet
-              </a>
-              <a
-                href="#services"
+              </Link>
+              <Link
+                to="/booking"
+                className="text-foreground hover:text-primary font-medium transition-smooth"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Book Now
+              </Link>
+              <Link
+                to="/services"
                 className="text-foreground hover:text-primary font-medium transition-smooth"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Services
-              </a>
-              <a
-                href="#about"
+              </Link>
+              <Link
+                to="/about"
                 className="text-foreground hover:text-primary font-medium transition-smooth"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
-              </a>
-              <a
-                href="#contact"
+              </Link>
+              <Link
+                to="/contact"
                 className="text-foreground hover:text-primary font-medium transition-smooth"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
-              </a>
+              </Link>
               <div className="flex flex-col space-y-2 pt-4">
                 <Button variant="outline" size="sm" asChild>
                   <a href={`tel:${phoneNumber}`} className="flex items-center justify-center">
@@ -142,7 +152,7 @@ const Header = () => {
                   </a>
                 </Button>
                 <Button variant="hero" size="sm" asChild>
-                  <a href="#booking">Book Now</a>
+                  <Link to="/booking">Book Now</Link>
                 </Button>
               </div>
             </nav>

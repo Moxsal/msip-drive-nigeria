@@ -71,24 +71,29 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a href="#fleet" className="text-background/80 hover:text-primary transition-smooth text-sm">
+                <Link to="/fleet" className="text-background/80 hover:text-primary transition-smooth text-sm">
                   Our Fleet
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-background/80 hover:text-primary transition-smooth text-sm">
+                <Link to="/services" className="text-background/80 hover:text-primary transition-smooth text-sm">
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about" className="text-background/80 hover:text-primary transition-smooth text-sm">
+                <Link to="/about" className="text-background/80 hover:text-primary transition-smooth text-sm">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="text-background/80 hover:text-primary transition-smooth text-sm">
+                <Link to="/contact" className="text-background/80 hover:text-primary transition-smooth text-sm">
                   Contact
-                </a>
+                </Link>
+              </li>
+              <li>
+                <Link to="/testimonials" className="text-background/80 hover:text-primary transition-smooth text-sm">
+                  Testimonials
+                </Link>
               </li>
             </ul>
           </div>
