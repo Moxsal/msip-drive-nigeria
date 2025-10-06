@@ -9,6 +9,7 @@ const Contact = () => {
     name: "",
     email: "",
     phone: "",
+    subject: "Booking",
     message: "",
   });
 
@@ -20,7 +21,7 @@ const Contact = () => {
     e.preventDefault();
     
     // Send via WhatsApp
-    const whatsappMessage = `New Contact Form Submission:\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nMessage: ${formData.message}`;
+    const whatsappMessage = `New Contact Form Submission:\n\nSubject: ${formData.subject}\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nMessage: ${formData.message}`;
     window.open(
       `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`,
       "_blank"
@@ -33,11 +34,12 @@ const Contact = () => {
       name: "",
       email: "",
       phone: "",
+      subject: "Booking",
       message: "",
     });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -157,6 +159,26 @@ const Contact = () => {
             <CardContent className="p-6">
               <h3 className="text-2xl font-heading font-bold mb-6">Send us a Message</h3>
               <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <label htmlFor="subject" className="block text-sm font-medium mb-2">
+                    Subject *
+                  </label>
+                  <select
+                    id="subject"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    className="w-full h-10 px-3 rounded-md border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-primary"
+                    required
+                  >
+                    <option value="Booking">Booking Inquiry</option>
+                    <option value="General">General Inquiry</option>
+                    <option value="Corporate">Corporate Services</option>
+                    <option value="Complaint">Complaint</option>
+                    <option value="Feedback">Feedback</option>
+                  </select>
+                </div>
+
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2">
                     Full Name *

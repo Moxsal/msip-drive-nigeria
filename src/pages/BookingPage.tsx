@@ -2,9 +2,10 @@ import { Helmet } from "react-helmet";
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Calendar, MapPin, Car, User, Shield, CreditCard } from "lucide-react";
+import { Calendar, MapPin, Car, User, Shield, CreditCard, CheckCircle } from "lucide-react";
 import { Checkbox } from "@/components/ui/checkbox";
 
 const BookingPage = () => {
@@ -250,6 +251,7 @@ const BookingPage = () => {
             </div>
           </section>
         </main>
+        <FloatingWhatsApp />
         <Footer />
       </div>
     </>

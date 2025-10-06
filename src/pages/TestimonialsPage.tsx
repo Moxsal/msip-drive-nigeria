@@ -1,8 +1,11 @@
 import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote, Shield, Users, ThumbsUp } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const testimonials = [
   {
@@ -129,9 +132,58 @@ const TestimonialsPage = () => {
             </div>
           </section>
 
-          {/* Testimonials Grid */}
+          {/* Testimonials Carousel */}
           <section className="py-20 bg-muted/30">
             <div className="container mx-auto px-4">
+              <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                plugins={[
+                  Autoplay({
+                    delay: 4000,
+                  }),
+                ]}
+                className="max-w-6xl mx-auto mb-12"
+              >
+                <CarouselContent>
+                  {testimonials.map((testimonial, index) => (
+                    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                      <Card className="h-full hover:shadow-medium transition-smooth">
+                        <CardContent className="p-6">
+                          <Quote className="h-8 w-8 text-primary/20 mb-4" />
+                          <div className="flex gap-1 mb-4">
+                            {[...Array(testimonial.rating)].map((_, i) => (
+                              <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+                            ))}
+                          </div>
+                          <p className="text-muted-foreground mb-6 italic">"{testimonial.text}"</p>
+                          <div className="flex items-center gap-3 mb-2">
+                            <img
+                              src={testimonial.image}
+                              alt={testimonial.name}
+                              className="w-12 h-12 rounded-full bg-muted"
+                            />
+                            <div>
+                              <div className="font-semibold">{testimonial.name}</div>
+                              <div className="text-sm text-muted-foreground">{testimonial.role}</div>
+                            </div>
+                          </div>
+                          <div className="text-xs text-muted-foreground">{testimonial.date}</div>
+                        </CardContent>
+                      </Card>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+
+              {/* All Testimonials Grid */}
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-heading font-bold">All Customer Reviews</h3>
+              </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
                 {testimonials.map((testimonial, index) => (
                   <Card key={index} className="hover:shadow-medium transition-smooth">
@@ -186,6 +238,7 @@ const TestimonialsPage = () => {
             </div>
           </section>
         </main>
+        <FloatingWhatsApp />
         <Footer />
       </div>
     </>

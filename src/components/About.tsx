@@ -1,60 +1,105 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle } from "lucide-react";
+import { Check, Shield, Star, Users, Target, Award } from "lucide-react";
 
 const About = () => {
   return (
     <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">About Msip Global Services</h2>
-            <p className="text-lg text-muted-foreground">
-              Your trusted partner for premium car rentals across Nigeria
-            </p>
-          </div>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">About Msip Global Services Ltd</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Nigeria's Most Trusted Car Rental Brand
+          </p>
+        </div>
 
-          <Card className="shadow-medium">
-            <CardContent className="p-8">
-              <div className="space-y-6">
-                <p className="text-lg leading-relaxed">
-                  <strong className="text-primary">Msip Global Services Ltd</strong> is a professional car rental company dedicated to serving individuals, families, and corporate clients across Nigeria. With years of experience in the automotive industry, we've built a reputation for reliability, quality, and exceptional customer service.
-                </p>
+        <Card className="max-w-5xl mx-auto shadow-large">
+          <CardContent className="p-8 md:p-12">
+            <div className="prose prose-lg max-w-none">
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                <strong>Msip Global Services Ltd</strong> is a trusted Nigerian car rental company dedicated to providing safe, reliable, and affordable transport solutions for individuals, families, and businesses across Nigeria.
+              </p>
 
-                <p className="text-muted-foreground leading-relaxed">
-                  Whether you need a comfortable sedan for daily commutes, a spacious SUV for family trips, or a luxury vehicle for special occasions, we have the perfect car for you. Our fleet consists of well-maintained, modern vehicles from trusted brands like Toyota, Lexus, and Mercedes-Benz.
-                </p>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Founded with a vision to redefine car rental in Nigeria, we combine modern vehicles, professional service, and transparent pricing to make every trip stress-free.
+              </p>
 
-                <div className="grid md:grid-cols-2 gap-4 my-8">
-                  {[
-                    "Wide selection of vehicles",
-                    "Competitive pricing",
-                    "Flexible rental terms",
-                    "Professional chauffeur service",
-                    "24/7 customer support",
-                    "Airport pickup & delivery",
-                    "Corporate solutions",
-                    "Comprehensive insurance",
-                  ].map((item, index) => (
-                    <div key={index} className="flex items-center gap-2">
-                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                      <span className="text-foreground">{item}</span>
-                    </div>
-                  ))}
+              <div className="my-8 p-6 bg-primary/5 rounded-lg border-l-4 border-primary">
+                <h3 className="text-xl font-heading font-bold mb-4">Our Promise</h3>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Clean, well-maintained cars for every journey</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Professional drivers who value your safety and comfort</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span>24/7 support for bookings and emergencies</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Simple booking, instant confirmation, and secure payments</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
+                <div>
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                    <Target className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-heading font-bold mb-2">Our Vision</h3>
+                  <p className="text-muted-foreground">
+                    To become Nigeria's most trusted and customer-friendly car rental brand.
+                  </p>
                 </div>
 
-                <p className="text-muted-foreground leading-relaxed">
-                  We serve major cities across Nigeria including Lagos, Abuja, Port Harcourt, Kano, and Ibadan. Our commitment to excellence has made us the preferred choice for both Nigerian nationals and international visitors seeking reliable transportation solutions.
-                </p>
-
-                <div className="bg-primary/5 border-l-4 border-primary p-4 rounded-r-lg">
-                  <p className="text-foreground font-medium italic">
-                    "At Msip Global Services, we don't just rent cars – we provide peace of mind, convenience, and memorable driving experiences."
+                <div>
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                    <Award className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-heading font-bold mb-2">Our Mission</h3>
+                  <p className="text-muted-foreground">
+                    To make car rentals easy, affordable, and reliable for everyone — whether you're traveling for business, leisure, or special occasions.
                   </p>
                 </div>
               </div>
-            </CardContent>
-          </Card>
-        </div>
+
+              <div className="my-8 p-6 bg-muted/30 rounded-lg">
+                <h3 className="text-xl font-heading font-bold mb-4 text-center">Our Core Values</h3>
+                <div className="flex flex-wrap justify-center gap-4">
+                  <div className="flex items-center gap-2 px-4 py-2 bg-background rounded-full">
+                    <Shield className="h-5 w-5 text-primary" />
+                    <span className="font-medium">Integrity</span>
+                  </div>
+                  <div className="flex items-center gap-2 px-4 py-2 bg-background rounded-full">
+                    <Check className="h-5 w-5 text-primary" />
+                    <span className="font-medium">Safety</span>
+                  </div>
+                  <div className="flex items-center gap-2 px-4 py-2 bg-background rounded-full">
+                    <Star className="h-5 w-5 text-primary" />
+                    <span className="font-medium">Reliability</span>
+                  </div>
+                  <div className="flex items-center gap-2 px-4 py-2 bg-background rounded-full">
+                    <Users className="h-5 w-5 text-primary" />
+                    <span className="font-medium">Customer Care</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="text-center mt-8 p-6 bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 rounded-lg">
+                <p className="text-lg text-foreground leading-relaxed mb-4">
+                  We proudly serve clients in <strong>Lagos, Abuja,</strong> and across Nigeria, offering daily, weekly, and long-term rentals for every need.
+                </p>
+                <p className="text-xl font-heading font-bold text-primary">
+                  Choose Msip Global Services Ltd — drive with confidence, rent with peace of mind.
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </section>
   );

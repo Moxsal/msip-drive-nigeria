@@ -3,6 +3,9 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Footer from "@/components/Footer";
+import FAQ from "@/components/FAQ";
+import Newsletter from "@/components/Newsletter";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote, Shield, AlertCircle } from "lucide-react";
@@ -168,8 +171,12 @@ const Index = () => {
               </div>
             </div>
           </section>
+
+          <FAQ />
+          <Newsletter />
         </main>
 
+        <FloatingWhatsApp />
         <Footer />
       </div>
     </>

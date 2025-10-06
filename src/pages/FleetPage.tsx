@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import Fleet from "@/components/Fleet";
 
 const FleetPage = () => {
@@ -25,6 +26,7 @@ const FleetPage = () => {
           </section>
           <Fleet />
         </main>
+        <FloatingWhatsApp />
         <Footer />
       </div>
     </>
