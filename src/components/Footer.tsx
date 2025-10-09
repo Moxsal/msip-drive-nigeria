@@ -19,7 +19,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-background/80 text-sm mb-4">
-              Your trusted partner for reliable and affordable car rentals across Nigeria. Drive with confidence.
+              Professional car hire and chauffeur services in Ogbomoso, Oyo State. Your trusted partner for reliable, comfortable transportation across Nigeria.
             </p>
             <div className="flex space-x-3">
               <a
@@ -129,8 +129,7 @@ const Footer = () => {
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-primary flex-shrink-0 mt-1" />
                 <span className="text-background/80 text-sm">
-                  Lagos, Abuja, Port Harcourt<br />
-                  Kano, Ibadan
+                  Ogbomoso, Oyo State, Nigeria
                 </span>
               </li>
             </ul>

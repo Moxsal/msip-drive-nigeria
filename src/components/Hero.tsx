@@ -20,10 +20,10 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-12">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-background mb-6">
-            Reliable & Affordable Car Rentals in Nigeria
+            Professional Car Hire Services in Ogbomoso, Oyo State
           </h1>
           <p className="text-xl md:text-2xl text-background/90 mb-8">
-            Drive with Confidence – Premium Fleet, Exceptional Service
+            Drive with Confidence – Available for Corporate, Airport & Private Hire
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="hero" size="lg" asChild>
@@ -37,7 +37,7 @@ const Hero = () => {
 
         {/* Booking Form Card */}
         <Card className="max-w-4xl mx-auto p-6 md:p-8 bg-background/95 backdrop-blur-sm shadow-large" id="booking">
-          <h2 className="text-2xl font-heading font-bold text-center mb-6">Quick Booking</h2>
+          <h2 className="text-2xl font-heading font-bold text-center mb-6">Quick Hire Request</h2>
           <form className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="space-y-2">
               <label className="text-sm font-medium flex items-center gap-2">
@@ -46,11 +46,11 @@ const Hero = () => {
               </label>
               <select className="w-full h-10 px-3 rounded-md border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-primary">
                 <option value="">Select location</option>
+                <option value="ogbomoso">Ogbomoso, Oyo State</option>
+                <option value="ibadan">Ibadan</option>
                 <option value="lagos">Lagos</option>
                 <option value="abuja">Abuja</option>
-                <option value="port-harcourt">Port Harcourt</option>
-                <option value="kano">Kano</option>
-                <option value="ibadan">Ibadan</option>
+                <option value="other">Other Location</option>
               </select>
             </div>
 
@@ -82,18 +82,19 @@ const Hero = () => {
                 Car Type
               </label>
               <select className="w-full h-10 px-3 rounded-md border border-input bg-background text-foreground focus:ring-2 focus:ring-primary focus:border-primary">
-                <option value="">Select car type</option>
-                <option value="sedan">Sedan</option>
-                <option value="suv">SUV</option>
-                <option value="luxury">Luxury</option>
-                <option value="minivan">Minivan</option>
+                <option value="">Select hire type</option>
+                <option value="business">Business/Executive</option>
+                <option value="airport">Airport Transfer</option>
+                <option value="personal">Personal/Private</option>
+                <option value="corporate">Corporate Event</option>
+                <option value="interstate">Inter-State Travel</option>
               </select>
             </div>
 
             <div className="md:col-span-2 lg:col-span-4">
               <Button variant="hero" size="lg" className="w-full" type="button" asChild>
-                <a href={`https://wa.me/2348062237960?text=${encodeURIComponent("Hi, I'd like to book a car rental. Please help me with the details.")}`} target="_blank" rel="noopener noreferrer">
-                  Confirm Booking via WhatsApp
+                <a href={`https://wa.me/2348062237960?text=${encodeURIComponent("Hi, I'd like to hire a car from Msip Global Services Ltd. Please help me with the details.")}`} target="_blank" rel="noopener noreferrer">
+                  Confirm Hire Request via WhatsApp
                 </a>
               </Button>
             </div>

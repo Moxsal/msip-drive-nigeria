@@ -3,85 +3,147 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Footer from "@/components/Footer";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import FAQ from "@/components/FAQ";
 import Newsletter from "@/components/Newsletter";
-import FloatingWhatsApp from "@/components/FloatingWhatsApp";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Star, Quote, Shield, AlertCircle } from "lucide-react";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Shield, CheckCircle, Clock, Star } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import { Alert, AlertDescription } from "@/components/ui/alert";
-
-const testimonials = [
-  {
-    name: "Adebayo Johnson",
-    role: "Business Executive",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Adebayo",
-    rating: 5,
-    text: "Outstanding service! The car was in pristine condition and the booking process was seamless.",
-  },
-  {
-    name: "Chioma Okafor",
-    role: "Event Planner",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Chioma",
-    rating: 5,
-    text: "I've rented from Msip multiple times for my events. Their luxury fleet and professional chauffeurs never disappoint.",
-  },
-  {
-    name: "Ibrahim Musa",
-    role: "Tourist",
-    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Ibrahim",
-    rating: 5,
-    text: "Great experience exploring Nigeria with their reliable SUVs. The team was helpful and the prices were very competitive.",
-  },
-];
+import companySuv from "@/assets/company-suv.png";
 
 const Index = () => {
+  const testimonials = [
+    {
+      name: "Adewale Johnson",
+      role: "Business Executive",
+      content: "Professional service from start to finish. The chauffeur was punctual and courteous. Highly recommend Msip Global Services!",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80",
+    },
+    {
+      name: "Ngozi Okafor",
+      role: "Event Planner",
+      content: "Used their services for my wedding. The cars were immaculate and the drivers were excellent. Made our special day even more memorable!",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80",
+    },
+    {
+      name: "Ibrahim Musa",
+      role: "Corporate Manager",
+      content: "We've been using Msip for our corporate transport needs for over a year. Reliable, professional, and always on time.",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80",
+    },
+  ];
+
   return (
     <>
       <Helmet>
-        <title>Msip Global Services - Premier Car Rental in Nigeria | Lagos, Abuja</title>
-        <meta name="description" content="Nigeria's leading car rental service. Rent Toyota, Lexus, Mercedes from ₦25,000/day. Airport pickup, chauffeur service, corporate leasing. Book now!" />
-        <meta name="keywords" content="car rental Nigeria, rent car Lagos, car hire Abuja, Toyota rental Nigeria, luxury car rental, airport pickup Lagos" />
+        <title>Msip Global Services Ltd - Professional Car Hire in Ogbomoso, Oyo State | Nigeria</title>
+        <meta name="description" content="Professional car hire and chauffeur services in Ogbomoso, Oyo State. Executive cars, airport transfers, corporate hire. Available 24/7. Call +234-806-223-7960" />
+        <meta name="keywords" content="car hire Ogbomoso, car hire Oyo State, chauffeur service Nigeria, airport transfer Ogbomoso, executive car hire, professional driver Nigeria" />
       </Helmet>
       
       <div className="min-h-screen">
         <Header />
-        
-        <main className="pt-20">
-          {/* Promotion Banner */}
-          <Alert className="container mx-auto my-4 bg-primary/10 border-primary">
-            <AlertCircle className="h-4 w-4 text-primary" />
-            <AlertDescription className="text-foreground font-medium">
-              🎉 Special Offer: Get 10% off on weekend rentals! Book now and save.
-            </AlertDescription>
-          </Alert>
+        <Hero />
 
-          <Hero />
-          <WhyChooseUs />
-
-          {/* Featured Cars Preview */}
-          <section className="py-12 bg-muted/30">
-            <div className="container mx-auto px-4 text-center">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Featured Vehicles</h2>
-              <p className="text-muted-foreground mb-6">Browse our premium fleet</p>
-              <Button variant="hero" size="lg" asChild>
-                <a href="/fleet">View All Cars</a>
-              </Button>
-            </div>
-          </section>
-
-          {/* Testimonials Slider */}
-          <section className="py-20 bg-background">
-            <div className="container mx-auto px-4">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">What Our Clients Say</h2>
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Don't just take our word for it - hear from our satisfied customers
-                </p>
+        {/* Trust Badges Section */}
+        <section className="py-6 bg-primary/5">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+              <div className="flex flex-col items-center text-center">
+                <Clock className="h-10 w-10 text-primary mb-2" />
+                <p className="text-sm font-medium">24/7 Service</p>
               </div>
+              <div className="flex flex-col items-center text-center">
+                <Shield className="h-10 w-10 text-primary mb-2" />
+                <p className="text-sm font-medium">Safe & Clean Cars</p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <CheckCircle className="h-10 w-10 text-primary mb-2" />
+                <p className="text-sm font-medium">On-Time Pickup</p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <Star className="h-10 w-10 text-primary mb-2" />
+                <p className="text-sm font-medium">Reliable Drivers</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
+        {/* Promotional Banner */}
+        <section className="py-4 bg-gradient-to-r from-primary to-primary/80">
+          <div className="container mx-auto px-4 text-center">
+            <p className="text-background text-lg md:text-xl font-heading font-bold">
+              🎉 Book Early and Save! Professional Car Hire Services Available 24/7
+            </p>
+          </div>
+        </section>
+
+        {/* Company Introduction with Image */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                  <Badge className="mb-4">About Msip Global Services Ltd</Badge>
+                  <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+                    Professional Car Hire Services in Ogbomoso, Oyo State
+                  </h2>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    <strong>Msip Global Services Ltd</strong> is a trusted Nigerian car hire and chauffeur company, proudly serving clients in Ogbomoso, Oyo State, and across Nigeria.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    We specialize in executive car hire, airport transfers, inter-state journeys, and corporate transport solutions, offering well-maintained vehicles and professional drivers who understand punctuality, safety, and discretion.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 mt-6">
+                    <Button variant="hero" size="lg" asChild>
+                      <a href="#booking">Request a Hire</a>
+                    </Button>
+                    <Button variant="outline" size="lg" asChild>
+                      <a href="tel:+2348062237960">Call Us Now</a>
+                    </Button>
+                  </div>
+                </div>
+                <div className="relative">
+                  <img 
+                    src={companySuv} 
+                    alt="Msip Global Services professional car hire vehicle - Executive SUV in Ogbomoso"
+                    className="rounded-lg shadow-large w-full h-auto object-cover"
+                  />
+                  <div className="absolute -bottom-6 -right-6 bg-primary text-background p-6 rounded-lg shadow-large max-w-xs hidden md:block">
+                    <p className="text-2xl font-heading font-bold">10+ Years</p>
+                    <p className="text-sm">Of Excellence in Car Hire Services</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <WhyChooseUs />
+
+        {/* Testimonials Section */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">What Our Clients Say</h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Don't just take our word for it — hear from our satisfied customers
+              </p>
+            </div>
+
+            <div className="max-w-5xl mx-auto">
               <Carousel
                 opts={{
                   align: "start",
@@ -89,34 +151,33 @@ const Index = () => {
                 }}
                 plugins={[
                   Autoplay({
-                    delay: 4000,
+                    delay: 5000,
                   }),
                 ]}
-                className="max-w-5xl mx-auto"
+                className="w-full"
               >
                 <CarouselContent>
                   {testimonials.map((testimonial, index) => (
                     <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                      <Card className="h-full hover:shadow-medium transition-smooth">
+                      <Card className="h-full">
                         <CardContent className="p-6">
-                          <Quote className="h-8 w-8 text-primary/20 mb-4" />
-                          <div className="flex gap-1 mb-4">
+                          <div className="flex items-center gap-4 mb-4">
+                            <img 
+                              src={testimonial.image} 
+                              alt={testimonial.name}
+                              className="w-12 h-12 rounded-full object-cover"
+                            />
+                            <div>
+                              <p className="font-heading font-bold">{testimonial.name}</p>
+                              <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                            </div>
+                          </div>
+                          <div className="flex gap-1 mb-3">
                             {[...Array(testimonial.rating)].map((_, i) => (
                               <Star key={i} className="h-4 w-4 fill-primary text-primary" />
                             ))}
                           </div>
-                          <p className="text-muted-foreground mb-6 italic">"{testimonial.text}"</p>
-                          <div className="flex items-center gap-3">
-                            <img
-                              src={testimonial.image}
-                              alt={testimonial.name}
-                              className="w-12 h-12 rounded-full bg-muted"
-                            />
-                            <div>
-                              <div className="font-semibold">{testimonial.name}</div>
-                              <div className="text-sm text-muted-foreground">{testimonial.role}</div>
-                            </div>
-                          </div>
+                          <p className="text-muted-foreground">{testimonial.content}</p>
                         </CardContent>
                       </Card>
                     </CarouselItem>
@@ -125,57 +186,18 @@ const Index = () => {
                 <CarouselPrevious />
                 <CarouselNext />
               </Carousel>
-
-              <div className="text-center mt-8">
-                <Button variant="outline" size="lg" asChild>
-                  <a href="/testimonials">Read More Reviews</a>
-                </Button>
-              </div>
-
-              {/* Trust Badges */}
-              <div className="mt-12 flex flex-wrap items-center justify-center gap-8">
-                <div className="flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-lg">
-                  <Shield className="h-5 w-5 text-primary" />
-                  <span className="text-sm font-medium">Fully Insured</span>
-                </div>
-                <div className="flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-lg">
-                  <Star className="h-5 w-5 text-primary" />
-                  <span className="text-sm font-medium">5-Star Rated</span>
-                </div>
-                <div className="flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-lg">
-                  <Shield className="h-5 w-5 text-primary" />
-                  <span className="text-sm font-medium">Paystack Secure</span>
-                </div>
-                <div className="flex items-center gap-2 px-4 py-2 bg-muted/30 rounded-lg">
-                  <Shield className="h-5 w-5 text-primary" />
-                  <span className="text-sm font-medium">Flutterwave Verified</span>
-                </div>
-              </div>
             </div>
-          </section>
 
-          {/* CTA Section */}
-          <section className="py-20 bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10">
-            <div className="container mx-auto px-4 text-center">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Ready to Hit the Road?</h2>
-              <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Book your perfect ride today and experience the difference with Msip Global Services
-              </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Button variant="hero" size="lg" asChild>
-                  <a href="/booking">Book Now</a>
-                </Button>
-                <Button variant="outline" size="lg" asChild>
-                  <a href="/contact">Contact Us</a>
-                </Button>
-              </div>
+            <div className="text-center mt-8">
+              <Button variant="outline" size="lg" asChild>
+                <a href="/testimonials">View All Testimonials</a>
+              </Button>
             </div>
-          </section>
+          </div>
+        </section>
 
-          <FAQ />
-          <Newsletter />
-        </main>
-
+        <FAQ />
+        <Newsletter />
         <FloatingWhatsApp />
         <Footer />
       </div>

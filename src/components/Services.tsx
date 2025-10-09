@@ -5,61 +5,61 @@ import { User, Plane, Briefcase, Car, Check } from "lucide-react";
 const services = [
   {
     icon: User,
-    title: "Chauffeur Hire",
-    description: "Professional drivers available 24/7 for all your transportation needs. Our experienced chauffeurs are trained to provide safe, comfortable, and discreet service.",
-    fullDescription: "Whether you need a driver for business meetings, social events, or daily errands, our professional chauffeur service ensures you travel in style and comfort. All our drivers are licensed, vetted, and trained in defensive driving techniques.",
+    title: "Executive Car Hire",
+    description: "Premium cars with professional, uniformed drivers for business trips and VIP transport. Travel in style with our executive fleet.",
+    fullDescription: "Our executive car hire service provides professional transportation for business meetings, corporate events, and VIP occasions. Experience comfort, punctuality, and discretion with our uniformed chauffeurs and premium vehicles.",
     features: [
-      "Experienced & Licensed Drivers",
-      "Available 24/7 for Any Occasion",
-      "Expert Knowledge of Local Routes",
-      "Professional, Courteous & Discreet",
-      "Flexible Hourly or Daily Rates",
-      "Perfect for Business or Leisure",
+      "Professional Uniformed Drivers",
+      "Executive & Luxury Vehicles",
+      "Punctual & Reliable Service",
+      "Perfect for Business & VIP Travel",
+      "Air-Conditioned Comfort",
+      "Privacy & Discretion Guaranteed",
     ],
     image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80",
   },
   {
     icon: Plane,
-    title: "Airport Pickup & Drop-off",
-    description: "Reliable airport transfers from Lagos, Abuja, and all major Nigerian airports. Never worry about missing your flight or waiting for transportation again.",
-    fullDescription: "Start your journey stress-free with our professional airport pickup and drop-off service. We monitor flight schedules, provide meet-and-greet service, and ensure punctual arrivals and departures.",
+    title: "Airport Transfers",
+    description: "Reliable pickups and drop-offs from major airports across Nigeria. On-time service ensures you never miss a flight.",
+    fullDescription: "Start or end your journey stress-free with our professional airport transfer service. We provide meet-and-greet service, monitor flight schedules, and ensure punctual arrivals and departures from all major Nigerian airports.",
     features: [
-      "Meet & Greet at Arrivals Hall",
+      "Meet & Greet at Arrivals",
       "Real-time Flight Monitoring",
-      "Lagos, Abuja & Port Harcourt Airports",
-      "On-time Guarantee or Money Back",
+      "Lagos, Abuja, Port Harcourt & More",
+      "On-Time Guarantee",
       "Luggage Assistance Included",
-      "Available for Domestic & International Flights",
+      "24/7 Availability",
     ],
     image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80",
   },
   {
     icon: Briefcase,
-    title: "Corporate Leasing",
-    description: "Affordable long-term rental solutions for companies and businesses. Simplify your corporate transportation with our flexible leasing packages.",
-    fullDescription: "Our corporate leasing program is designed for businesses that need reliable, cost-effective transportation solutions. From small startups to large corporations, we provide customized packages with dedicated support.",
+    title: "Corporate & Event Hire",
+    description: "Long-term and short-term car hire for businesses, conferences, and special occasions. Flexible packages tailored to your needs.",
+    fullDescription: "Our corporate and event hire service is designed for businesses and organizations that require reliable transportation solutions. From conferences to weddings, we provide professional vehicles and drivers for any occasion.",
     features: [
-      "Flexible Daily, Weekly & Monthly Contracts",
-      "Attractive Volume Discounts",
-      "Dedicated Account Manager",
-      "Priority Booking & Support",
-      "Monthly Invoicing & Reporting",
-      "Maintenance & Insurance Included",
+      "Flexible Daily, Weekly & Monthly Hire",
+      "Corporate Events & Conferences",
+      "Wedding & Special Occasion Hire",
+      "Dedicated Account Support",
+      "Priority Booking",
+      "Professional & Reliable Service",
     ],
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
   },
   {
     icon: Car,
-    title: "Luxury Car Rental",
-    description: "Premium rides for VIPs, events, and weddings. Make a grand entrance with our collection of luxury vehicles including Mercedes-Benz, Lexus, and BMW.",
-    fullDescription: "Elevate your special occasions with our luxury car rental service. Perfect for weddings, corporate events, red carpet arrivals, and VIP transportation. All luxury rentals include premium insurance and optional chauffeur service.",
+    title: "Private Chauffeur Service",
+    description: "Experienced, uniformed drivers ensuring safety, privacy, and comfort for all your transportation needs.",
+    fullDescription: "Our private chauffeur service offers experienced, professional drivers who understand the importance of safety, discretion, and customer satisfaction. Perfect for personal errands, family trips, or any occasion requiring a trusted driver.",
     features: [
-      "Mercedes-Benz, Lexus, BMW & Range Rover",
-      "Perfect for Weddings & Special Events",
-      "Red Carpet Treatment & VIP Service",
-      "Complimentary Chauffeur Available",
-      "Champagne & Refreshments on Request",
-      "Flexible Rental Duration",
+      "Licensed & Experienced Drivers",
+      "Uniformed & Professional",
+      "Safe & Defensive Driving",
+      "Courteous & Discreet Service",
+      "Available for Any Occasion",
+      "Flexible Hourly or Daily Hire",
     ],
     image: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80",
   },
@@ -72,7 +72,7 @@ const Services = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Our Services</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive car rental solutions tailored to your specific needs
+            Professional car hire solutions tailored to your specific needs across Nigeria
           </p>
         </div>
 
@@ -103,11 +103,11 @@ const Services = () => {
                 </ul>
                 <Button variant="hero" className="w-full" asChild>
                   <a 
-                    href={`https://wa.me/2348062237960?text=${encodeURIComponent(`Hi, I'm interested in ${service.title}. Please provide more information.`)}`}
+                    href={`https://wa.me/2348062237960?text=${encodeURIComponent(`Hi, I'm interested in ${service.title} from Msip Global Services Ltd. Please provide more information.`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Book {service.title}
+                    Hire {service.title}
                   </a>
                 </Button>
               </CardContent>

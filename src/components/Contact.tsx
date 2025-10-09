@@ -50,9 +50,9 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Get In Touch</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Get in Touch</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have questions? We're here to help. Contact us through any of the channels below.
+            We're here to help! Contact us for bookings and inquiries — available 24/7
           </p>
         </div>
 
@@ -128,11 +128,9 @@ const Contact = () => {
                     <MapPin className="h-5 w-5 text-primary" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-heading font-bold mb-1">Locations</h3>
-                    <p className="text-muted-foreground">
-                      Lagos • Abuja • Port Harcourt • Kano • Ibadan
-                    </p>
-                    <p className="text-sm text-muted-foreground mt-1">Serving major cities across Nigeria</p>
+                    <h3 className="font-heading font-bold mb-1">Visit Us</h3>
+                    <p className="text-muted-foreground">Ogbomoso, Oyo State, Nigeria</p>
+                    <p className="text-sm text-muted-foreground mt-1">Serving clients nationwide</p>
                   </div>
                 </div>
               </CardContent>
@@ -145,9 +143,9 @@ const Contact = () => {
                     <Clock className="h-5 w-5 text-primary" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-heading font-bold mb-1">Business Hours</h3>
-                    <p className="text-muted-foreground">24/7 Service Available</p>
-                    <p className="text-sm text-muted-foreground mt-1">Emergency support anytime</p>
+                    <h3 className="font-heading font-bold mb-1">Availability</h3>
+                    <p className="text-muted-foreground font-bold">Bookings Available 24/7</p>
+                    <p className="text-sm text-primary mt-1">Round-the-clock support</p>
                   </div>
                 </div>
               </CardContent>
@@ -256,14 +254,14 @@ const Contact = () => {
           <Card className="overflow-hidden shadow-medium">
             <div className="aspect-video w-full">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7297914556243!2d3.3502074!3d6.4278339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2s!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126254.71845074982!2d4.129394697656251!3d8.132206400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1037f29b02b0e935%3A0x3cb5c0b1fc61fa0c!2sOgbomoso%2C%20Oyo%20State%2C%20Nigeria!5e0!3m2!1sen!2s!4v1234567890"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Msip Global Services Location"
+                title="Msip Global Services - Ogbomoso, Oyo State Location"
               />
             </div>
           </Card>

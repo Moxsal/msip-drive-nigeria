@@ -8,7 +8,7 @@ const About = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">About Msip Global Services Ltd</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Nigeria's Most Trusted Car Rental Brand
+            Professional Car Hire & Chauffeur Services in Ogbomoso, Oyo State
           </p>
         </div>
 
@@ -16,31 +16,35 @@ const About = () => {
           <CardContent className="p-8 md:p-12">
             <div className="prose prose-lg max-w-none">
               <p className="text-muted-foreground leading-relaxed mb-6">
-                <strong>Msip Global Services Ltd</strong> is a trusted Nigerian car rental company dedicated to providing safe, reliable, and affordable transport solutions for individuals, families, and businesses across Nigeria.
+                <strong>Msip Global Services Ltd</strong> is a trusted Nigerian car hire and chauffeur company, proudly serving clients in <strong>Ogbomoso, Oyo State</strong>, and across Nigeria.
               </p>
 
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Founded with a vision to redefine car rental in Nigeria, we combine modern vehicles, professional service, and transparent pricing to make every trip stress-free.
+                Founded with a vision to redefine professional car hire, our mission is to make transportation safe, comfortable, and dependable for individuals, families, and corporate clients.
+              </p>
+
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                We specialize in executive car hire, airport transfers, inter-state journeys, and corporate transport solutions, offering well-maintained vehicles and professional drivers who understand punctuality, safety, and discretion.
               </p>
 
               <div className="my-8 p-6 bg-primary/5 rounded-lg border-l-4 border-primary">
-                <h3 className="text-xl font-heading font-bold mb-4">Our Promise</h3>
+                <h3 className="text-xl font-heading font-bold mb-4">Our Commitment</h3>
                 <ul className="space-y-2 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Clean, well-maintained cars for every journey</span>
+                    <span>Reliable and punctual service — always on time</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Professional drivers who value your safety and comfort</span>
+                    <span>Clean, air-conditioned vehicles for every journey</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>24/7 support for bookings and emergencies</span>
+                    <span>Polite, well-trained, and uniformed drivers</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Simple booking, instant confirmation, and secure payments</span>
+                    <span>Transparent communication and instant booking confirmation</span>
                   </li>
                 </ul>
               </div>
@@ -52,7 +56,7 @@ const About = () => {
                   </div>
                   <h3 className="text-xl font-heading font-bold mb-2">Our Vision</h3>
                   <p className="text-muted-foreground">
-                    To become Nigeria's most trusted and customer-friendly car rental brand.
+                    To become one of Nigeria's most recognized names in professional car hire, known for quality service and customer satisfaction.
                   </p>
                 </div>
 
@@ -62,7 +66,7 @@ const About = () => {
                   </div>
                   <h3 className="text-xl font-heading font-bold mb-2">Our Mission</h3>
                   <p className="text-muted-foreground">
-                    To make car rentals easy, affordable, and reliable for everyone — whether you're traveling for business, leisure, or special occasions.
+                    To make professional car hire easy, reliable, and accessible for everyone — whether you need transportation for business, airport pickup, or private hire.
                   </p>
                 </div>
               </div>
@@ -80,7 +84,7 @@ const About = () => {
                   </div>
                   <div className="flex items-center gap-2 px-4 py-2 bg-background rounded-full">
                     <Star className="h-5 w-5 text-primary" />
-                    <span className="font-medium">Reliability</span>
+                    <span className="font-medium">Professionalism</span>
                   </div>
                   <div className="flex items-center gap-2 px-4 py-2 bg-background rounded-full">
                     <Users className="h-5 w-5 text-primary" />
@@ -91,10 +95,10 @@ const About = () => {
 
               <div className="text-center mt-8 p-6 bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 rounded-lg">
                 <p className="text-lg text-foreground leading-relaxed mb-4">
-                  We proudly serve clients in <strong>Lagos, Abuja,</strong> and across Nigeria, offering daily, weekly, and long-term rentals for every need.
+                  Whether you need transportation for business, airport pickup, or private hire, <strong>Msip Global Services Ltd</strong> ensures every trip is handled with excellence, reliability, and comfort.
                 </p>
                 <p className="text-xl font-heading font-bold text-primary">
-                  Choose Msip Global Services Ltd — drive with confidence, rent with peace of mind.
+                  Contact us today — your journey starts with confidence.
                 </p>
               </div>
             </div>

@@ -13,7 +13,6 @@ const cars = [
     id: 1,
     name: "Toyota Corolla 2020",
     image: toyotaCorolla,
-    price: "₦25,000",
     category: "Sedan",
     seats: 5,
     transmission: "Automatic",
@@ -23,8 +22,7 @@ const cars = [
     id: 2,
     name: "Toyota Camry 2021",
     image: toyotaCamry,
-    price: "₦35,000",
-    category: "Sedan",
+    category: "Executive Sedan",
     seats: 5,
     transmission: "Automatic",
     fuel: "Petrol",
@@ -33,8 +31,7 @@ const cars = [
     id: 3,
     name: "Toyota Prado 2022",
     image: toyotaPrado,
-    price: "₦80,000",
-    category: "SUV",
+    category: "Executive SUV",
     seats: 7,
     transmission: "Automatic",
     fuel: "Diesel",
@@ -43,7 +40,6 @@ const cars = [
     id: 4,
     name: "Lexus RX 350",
     image: lexusRx,
-    price: "₦90,000",
     category: "Luxury SUV",
     seats: 5,
     transmission: "Automatic",
@@ -53,7 +49,6 @@ const cars = [
     id: 5,
     name: "Mercedes-Benz E-Class",
     image: mercedesBenz,
-    price: "₦100,000",
     category: "Luxury Sedan",
     seats: 5,
     transmission: "Automatic",
@@ -63,8 +58,7 @@ const cars = [
     id: 6,
     name: "Toyota Highlander 2022",
     image: toyotaHighlander,
-    price: "₦70,000",
-    category: "SUV",
+    category: "Family SUV",
     seats: 7,
     transmission: "Automatic",
     fuel: "Petrol",
@@ -78,7 +72,7 @@ const Fleet = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Our Premium Fleet</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Choose from our wide range of well-maintained vehicles to suit your needs and budget
+            Professional vehicles available for corporate, airport, and private hire across Nigeria
           </p>
         </div>
 
@@ -98,8 +92,7 @@ const Fleet = () => {
               <CardContent className="p-6">
                 <h3 className="text-xl font-heading font-bold mb-2">{car.name}</h3>
                 <div className="flex items-center justify-between mb-4">
-                  <div className="text-2xl font-bold text-primary">{car.price}</div>
-                  <div className="text-sm text-muted-foreground">per day</div>
+                  <span className="text-xl font-bold text-primary">Available for Hire</span>
                 </div>
                 
                 <div className="flex items-center justify-between mb-4 text-sm text-muted-foreground">
@@ -123,11 +116,11 @@ const Fleet = () => {
                   asChild
                 >
                   <a
-                    href={`https://wa.me/2348062237960?text=${encodeURIComponent(`Hi, I'm interested in booking the ${car.name} at ${car.price}/day. Please provide more details.`)}`}
+                    href={`https://wa.me/2348062237960?text=${encodeURIComponent(`Hi, I'd like to hire the ${car.name} from Msip Global Services Ltd. Please provide more information.`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Book Now
+                    Hire Now
                   </a>
                 </Button>
               </CardContent>
