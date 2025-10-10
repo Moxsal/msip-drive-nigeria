@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Calendar, MapPin, Car } from "lucide-react";
-import heroImage from "@/assets/hero-bg.jpg";
+import heroImage from "@/assets/welcome-hero.png";
 
 const Hero = () => {
   return (
@@ -10,10 +10,10 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Luxury car rental in Nigeria"
-          className="w-full h-full object-cover"
+          alt="Professional car hire services in Ogbomoso - Msip Global Services"
+          className="w-full h-full object-cover animate-fade-in"
         />
-        <div className="absolute inset-0 gradient-hero opacity-70"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/60"></div>
       </div>
 
       {/* Content */}

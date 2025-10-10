@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { User, Plane, Briefcase, Car, Check } from "lucide-react";
+import servicesBanner from "@/assets/services-banner.png";
 
 const services = [
   {
@@ -69,6 +70,15 @@ const Services = () => {
   return (
     <section id="services" className="py-20 bg-background">
       <div className="container mx-auto px-4">
+        {/* Services Banner */}
+        <div className="max-w-5xl mx-auto mb-12">
+          <img 
+            src={servicesBanner} 
+            alt="Msip Global Services - Auto & Chauffeur Services in Ogbomoso"
+            className="rounded-lg shadow-large w-full h-auto object-cover animate-fade-in"
+          />
+        </div>
+
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Our Services</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">

@@ -19,6 +19,7 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import companySuv from "@/assets/company-suv.png";
+import missionVision from "@/assets/mission-vision.png";
 
 const Index = () => {
   const testimonials = [
@@ -117,9 +118,9 @@ const Index = () => {
                 </div>
                 <div className="relative">
                   <img 
-                    src={companySuv} 
-                    alt="Msip Global Services professional car hire vehicle - Executive SUV in Ogbomoso"
-                    className="rounded-lg shadow-large w-full h-auto object-cover"
+                    src={missionVision} 
+                    alt="Msip Global Services Mission & Vision - Professional car hire in Ogbomoso"
+                    className="rounded-lg shadow-large w-full h-auto object-cover animate-fade-in"
                   />
                   <div className="absolute -bottom-6 -right-6 bg-primary text-background p-6 rounded-lg shadow-large max-w-xs hidden md:block">
                     <p className="text-2xl font-heading font-bold">10+ Years</p>
