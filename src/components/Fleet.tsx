@@ -7,6 +7,10 @@ import toyotaPrado from "@/assets/toyota-prado.jpg";
 import lexusRx from "@/assets/lexus-rx.jpg";
 import mercedesBenz from "@/assets/mercedes-benz.jpg";
 import toyotaHighlander from "@/assets/toyota-highlander.jpg";
+import hiaceVan from "@/assets/hiace-van.png";
+import siennaBlue from "@/assets/sienna-blue.png";
+import siennaGray from "@/assets/sienna-gray.png";
+import fortunerWhite from "@/assets/fortuner-white.png";
 
 const cars = [
   {
@@ -62,6 +66,33 @@ const cars = [
     seats: 7,
     transmission: "Automatic",
     fuel: "Petrol",
+  },
+  {
+    id: 7,
+    name: "Toyota Fortuner 2023",
+    image: fortunerWhite,
+    category: "Executive SUV",
+    seats: 7,
+    transmission: "Automatic",
+    fuel: "Diesel",
+  },
+  {
+    id: 8,
+    name: "Toyota Sienna",
+    image: siennaBlue,
+    category: "Premium Van",
+    seats: 8,
+    transmission: "Automatic",
+    fuel: "Petrol",
+  },
+  {
+    id: 9,
+    name: "Toyota Hiace",
+    image: hiaceVan,
+    category: "Group Transport",
+    seats: 14,
+    transmission: "Manual",
+    fuel: "Diesel",
   },
 ];
 

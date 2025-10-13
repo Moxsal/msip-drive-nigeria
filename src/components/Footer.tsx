@@ -15,7 +15,7 @@ const Footer = () => {
               <img src={msipLogo} alt="Msip Global Services" className="h-12 w-12 object-contain" />
               <div>
                 <div className="font-heading text-lg font-bold text-background">Msip Global Services</div>
-                <div className="text-xs text-background/70">Premier Car Rental</div>
+                <div className="text-xs text-background/70">Premier Car Hire Services</div>
               </div>
             </div>
             <p className="text-background/80 text-sm mb-4">
@@ -105,8 +105,8 @@ const Footer = () => {
               <li className="text-background/80 text-sm">Chauffeur Service</li>
               <li className="text-background/80 text-sm">Airport Pickup</li>
               <li className="text-background/80 text-sm">Corporate Leasing</li>
-              <li className="text-background/80 text-sm">Luxury Car Rental</li>
-              <li className="text-background/80 text-sm">Long-term Rentals</li>
+              <li className="text-background/80 text-sm">Luxury Car Hire</li>
+              <li className="text-background/80 text-sm">Long-term Hire Services</li>
             </ul>
           </div>
 

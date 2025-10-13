@@ -8,9 +8,9 @@ const FleetPage = () => {
   return (
     <>
       <Helmet>
-        <title>Our Fleet - Premium Car Rental in Nigeria | Msip Global Services</title>
-        <meta name="description" content="Browse our extensive fleet of premium cars in Nigeria. Toyota Corolla, Camry, Prado, Lexus RX, Mercedes-Benz, and more. Affordable daily rates." />
-        <meta name="keywords" content="car rental Nigeria, rent car Lagos, rent car Abuja, Toyota rental Nigeria, luxury car rental" />
+        <title>Our Fleet - Premium Car Hire in Nigeria | Msip Global Services</title>
+        <meta name="description" content="Browse our extensive fleet of premium cars in Nigeria. Toyota Corolla, Camry, Prado, Sienna, Hiace, Fortuner and more. Professional hire services." />
+        <meta name="keywords" content="car hire Nigeria, hire car Ogbomoso, hire car Oyo State, Toyota hire Nigeria, luxury car hire" />
       </Helmet>
       
       <div className="min-h-screen">

@@ -34,7 +34,7 @@ const Newsletter = () => {
                 Stay Updated with Our Latest Offers
               </h2>
               <p className="text-lg text-muted-foreground">
-                Subscribe to our newsletter and get exclusive deals, promotions, and car rental tips delivered to your inbox
+                Subscribe to our newsletter and get exclusive deals, promotions, and car hire tips delivered to your inbox
               </p>
             </div>
 

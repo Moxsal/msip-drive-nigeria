@@ -22,7 +22,7 @@ const BookingPage = () => {
       .map(([key, _]) => key.charAt(0).toUpperCase() + key.slice(1))
       .join(", ");
     
-    const message = `Hi, I'd like to book a car rental.${extras ? `\nExtras: ${extras}` : ""}\nPlease help me complete my booking.`;
+    const message = `Hi, I'd like to book a car hire.${extras ? `\nExtras: ${extras}` : ""}\nPlease help me complete my booking.`;
     window.open(`https://wa.me/2348062237960?text=${encodeURIComponent(message)}`, '_blank');
   };
 
@@ -30,8 +30,8 @@ const BookingPage = () => {
     <>
       <Helmet>
         <title>Book Your Car - Easy Online Booking | Msip Global Services</title>
-        <meta name="description" content="Book your car rental in Nigeria online. Secure payment with Paystack & Flutterwave. Flexible pickup locations across Lagos, Abuja, and more." />
-        <meta name="keywords" content="book car rental Nigeria, online car booking Lagos, rent car online Abuja, car rental booking" />
+        <meta name="description" content="Book your car hire in Nigeria online. Professional chauffeur service with flexible pickup locations in Ogbomoso and across Nigeria." />
+        <meta name="keywords" content="book car hire Nigeria, online car booking Ogbomoso, hire car Oyo State, car hire booking" />
       </Helmet>
       
       <div className="min-h-screen">
@@ -86,11 +86,11 @@ const BookingPage = () => {
                       </div>
                     </div>
 
-                    {/* Rental Details */}
+                    {/* Hire Details */}
                     <div>
                       <h2 className="text-2xl font-heading font-bold mb-4 flex items-center gap-2">
                         <Car className="h-6 w-6 text-primary" />
-                        Rental Details
+                        Hire Details
                       </h2>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">

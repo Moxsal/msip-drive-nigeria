@@ -19,7 +19,7 @@ const Header = () => {
             <img src={msipLogo} alt="Msip Global Services" className="h-12 w-12 object-contain" />
             <div className="hidden sm:block">
               <div className="font-heading text-xl font-bold text-foreground">Msip Global Services</div>
-              <div className="text-xs text-muted-foreground">Premier Car Rental</div>
+              <div className="text-xs text-muted-foreground">Premier Car Hire Services</div>
             </div>
           </Link>
 

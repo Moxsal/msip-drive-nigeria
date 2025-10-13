@@ -5,14 +5,18 @@ import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import About from "@/components/About";
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Award, Users, Heart, Shield, Check } from "lucide-react";
+import fleetShowcase from "@/assets/fleet-showcase.png";
+import hiaceVan from "@/assets/hiace-van.png";
+import siennaGray from "@/assets/sienna-gray.png";
+import fortunerWhite from "@/assets/fortuner-white.png";
 
 const AboutPage = () => {
   return (
     <>
       <Helmet>
-        <title>About Us - Trusted Car Rental Company in Nigeria | Msip Global Services</title>
-        <meta name="description" content="Learn about Msip Global Services Ltd - Nigeria's trusted car rental company. Our mission, values, and commitment to exceptional service since inception." />
-        <meta name="keywords" content="about Msip Global Services, car rental company Nigeria, trusted car hire Lagos" />
+        <title>About Us - Trusted Car Hire Company in Nigeria | Msip Global Services</title>
+        <meta name="description" content="Learn about Msip Global Services Ltd - Nigeria's trusted car hire company. Our mission, values, and commitment to exceptional service since inception." />
+        <meta name="keywords" content="about Msip Global Services, car hire company Nigeria, trusted car hire Ogbomoso" />
       </Helmet>
       
       <div className="min-h-screen">
@@ -22,7 +26,7 @@ const AboutPage = () => {
             <div className="container mx-auto px-4 text-center">
               <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">About Msip Global Services</h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Your trusted partner for premium car rentals in Nigeria
+                Your trusted partner for premium car hire services in Nigeria
               </p>
             </div>
           </section>
@@ -66,37 +70,49 @@ const AboutPage = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
                 <Card className="overflow-hidden hover:shadow-medium transition-smooth">
                   <img 
-                    src="https://images.unsplash.com/photo-1562141968-fbaf2c21b1cf?auto=format&fit=crop&w=800&q=80" 
-                    alt="Modern Office" 
+                    src={fleetShowcase} 
+                    alt="Msip Global Services full fleet showcase - Multiple vehicles available for hire in Ogbomoso" 
                     className="w-full h-48 object-cover"
                   />
                   <CardContent className="p-4">
-                    <h3 className="font-heading font-bold">Professional Office</h3>
-                    <p className="text-sm text-muted-foreground">State-of-the-art facilities for customer service</p>
+                    <h3 className="font-heading font-bold">Our Complete Fleet</h3>
+                    <p className="text-sm text-muted-foreground">Diverse range of vehicles for every occasion</p>
                   </CardContent>
                 </Card>
 
                 <Card className="overflow-hidden hover:shadow-medium transition-smooth">
                   <img 
-                    src="https://images.unsplash.com/photo-1506097425191-7ad538b29cef?auto=format&fit=crop&w=800&q=80" 
-                    alt="Professional Team" 
+                    src={fortunerWhite} 
+                    alt="Toyota Fortuner - Executive SUV available for hire" 
                     className="w-full h-48 object-cover"
                   />
                   <CardContent className="p-4">
-                    <h3 className="font-heading font-bold">Expert Team</h3>
-                    <p className="text-sm text-muted-foreground">Trained professionals ready to serve you</p>
+                    <h3 className="font-heading font-bold">Executive SUVs</h3>
+                    <p className="text-sm text-muted-foreground">Premium vehicles for business and VIP travel</p>
                   </CardContent>
                 </Card>
 
                 <Card className="overflow-hidden hover:shadow-medium transition-smooth">
                   <img 
-                    src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=800&q=80" 
-                    alt="Premium Fleet" 
+                    src={hiaceVan} 
+                    alt="Toyota Hiace - Spacious van for group transport" 
                     className="w-full h-48 object-cover"
                   />
                   <CardContent className="p-4">
-                    <h3 className="font-heading font-bold">Premium Fleet</h3>
-                    <p className="text-sm text-muted-foreground">Well-maintained vehicles for every need</p>
+                    <h3 className="font-heading font-bold">Group Transport</h3>
+                    <p className="text-sm text-muted-foreground">Spacious vans for corporate and family trips</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="overflow-hidden hover:shadow-medium transition-smooth md:col-span-2 lg:col-span-1">
+                  <img 
+                    src={siennaGray} 
+                    alt="Toyota Sienna - Comfortable minivan for families" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <CardContent className="p-4">
+                    <h3 className="font-heading font-bold">Family Vehicles</h3>
+                    <p className="text-sm text-muted-foreground">Comfortable and spacious for family journeys</p>
                   </CardContent>
                 </Card>
               </div>

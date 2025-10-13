@@ -69,7 +69,7 @@ const testimonials = [
     role: "Wedding Coordinator",
     image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Grace",
     rating: 5,
-    text: "Used Msip for wedding car rentals - the Mercedes-Benz was stunning! Everything was handled professionally from booking to return. Highly recommend for special occasions.",
+    text: "Used Msip for wedding car hire - the Mercedes-Benz was stunning! Everything was handled professionally from booking to return. Highly recommend for special occasions.",
     date: "August 2024"
   },
   {
@@ -87,8 +87,8 @@ const TestimonialsPage = () => {
     <>
       <Helmet>
         <title>Customer Reviews & Testimonials | Msip Global Services</title>
-        <meta name="description" content="Read what our customers say about Msip Global Services car rental. 5-star rated service with 1000+ happy clients across Nigeria." />
-        <meta name="keywords" content="car rental reviews Nigeria, Msip testimonials, customer feedback Lagos car hire" />
+        <meta name="description" content="Read what our customers say about Msip Global Services car hire. 5-star rated service with 1000+ happy clients across Nigeria." />
+        <meta name="keywords" content="car hire reviews Nigeria, Msip testimonials, customer feedback Ogbomoso car hire" />
       </Helmet>
       
       <div className="min-h-screen">

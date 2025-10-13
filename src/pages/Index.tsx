@@ -20,6 +20,9 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import companySuv from "@/assets/company-suv.png";
 import missionVision from "@/assets/mission-vision.png";
+import fleetShowcase from "@/assets/fleet-showcase.png";
+import fortunerWhite from "@/assets/fortuner-white.png";
+import siennaBlue from "@/assets/sienna-blue.png";
 
 const Index = () => {
   const testimonials = [
@@ -118,8 +121,8 @@ const Index = () => {
                 </div>
                 <div className="relative">
                   <img 
-                    src={missionVision} 
-                    alt="Msip Global Services Mission & Vision - Professional car hire in Ogbomoso"
+                    src={fortunerWhite} 
+                    alt="Msip Global Services - Toyota Fortuner available for hire in Ogbomoso"
                     className="rounded-lg shadow-large w-full h-auto object-cover animate-fade-in"
                   />
                   <div className="absolute -bottom-6 -right-6 bg-primary text-background p-6 rounded-lg shadow-large max-w-xs hidden md:block">
@@ -127,6 +130,55 @@ const Index = () => {
                     <p className="text-sm">Of Excellence in Car Hire Services</p>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Fleet Showcase Section */}
+        <section className="py-16 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <Badge className="mb-4">Our Fleet</Badge>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+                  Professional Vehicles Ready for Hire
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  From executive sedans to spacious vans, our diverse fleet is maintained to the highest standards
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div className="relative rounded-lg overflow-hidden shadow-large">
+                  <img 
+                    src={fleetShowcase} 
+                    alt="Msip Global Services fleet - Multiple vehicles available for hire"
+                    className="w-full h-auto object-cover animate-fade-in"
+                  />
+                </div>
+                <div className="grid grid-cols-1 gap-6">
+                  <div className="relative rounded-lg overflow-hidden shadow-large">
+                    <img 
+                      src={siennaBlue} 
+                      alt="Toyota Sienna available for hire - Msip Global Services"
+                      className="w-full h-full object-cover animate-fade-in"
+                    />
+                  </div>
+                  <div className="relative rounded-lg overflow-hidden shadow-large">
+                    <img 
+                      src={missionVision} 
+                      alt="Msip Global Services Mission & Vision"
+                      className="w-full h-full object-cover animate-fade-in"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <Button variant="hero" size="lg" asChild>
+                  <a href="/fleet">View Full Fleet</a>
+                </Button>
               </div>
             </div>
           </div>

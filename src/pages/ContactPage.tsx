@@ -9,8 +9,8 @@ const ContactPage = () => {
     <>
       <Helmet>
         <title>Contact Us - Get in Touch | Msip Global Services</title>
-        <meta name="description" content="Contact Msip Global Services for car rentals in Nigeria. Call +234806 223 7960, WhatsApp us, or visit our office. We're here to help 24/7." />
-        <meta name="keywords" content="contact car rental Nigeria, Msip contact Lagos, car hire phone number Nigeria" />
+        <meta name="description" content="Contact Msip Global Services for car hire in Nigeria. Call +234-806-223-7960, WhatsApp us, or visit our office in Ogbomoso. Available 24/7." />
+        <meta name="keywords" content="contact car hire Nigeria, Msip contact Ogbomoso, car hire phone number Oyo State" />
       </Helmet>
       
       <div className="min-h-screen">
@@ -20,7 +20,7 @@ const ContactPage = () => {
             <div className="container mx-auto px-4 text-center">
               <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4">Get in Touch</h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                We're here to help with all your car rental needs
+                We're here to help with all your car hire needs
               </p>
             </div>
           </section>

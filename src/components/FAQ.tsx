@@ -8,12 +8,12 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const faqs = [
   {
-    question: "How do I book a car rental?",
+    question: "How do I book a car hire?",
     answer: "You can book a car through our website's booking page, call us at +234806 223 7960, or send us a message via WhatsApp. We'll confirm your reservation and send you all the details."
   },
   {
     question: "What documents do I need to rent a car?",
-    answer: "You'll need a valid driver's license, a government-issued ID (National ID, International Passport, or Voter's Card), and proof of address. For corporate rentals, we may require additional documentation."
+    answer: "You'll need a valid driver's license, a government-issued ID (National ID, International Passport, or Voter's Card), and proof of address. For corporate hire services, we may require additional documentation."
   },
   {
     question: "What is your cancellation policy?",
@@ -40,11 +40,11 @@ const faqs = [
     answer: "We accept bank transfers, Paystack, Flutterwave, and cash payments. A deposit is required to secure your booking, with the balance due at pickup or delivery."
   },
   {
-    question: "Do you offer long-term rentals?",
-    answer: "Yes, we have special rates for weekly and monthly rentals. Contact us for custom packages for corporate clients or extended personal use."
+    question: "Do you offer long-term hire services?",
+    answer: "Yes, we have special rates for weekly and monthly hire packages. Contact us for custom packages for corporate clients or extended personal use."
   },
   {
-    question: "What if the car breaks down during my rental?",
+    question: "What if the car breaks down during my hire period?",
     answer: "We provide 24/7 roadside assistance. If there's a mechanical issue, we'll arrange for repairs or provide a replacement vehicle at no extra cost to you."
   }
 ];
@@ -56,7 +56,7 @@ const FAQ = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Frequently Asked Questions</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Find answers to common questions about our car rental services
+            Find answers to common questions about our car hire services
           </p>
         </div>
 

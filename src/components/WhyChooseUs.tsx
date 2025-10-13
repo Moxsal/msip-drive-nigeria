@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Why Choose Us</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We're committed to providing exceptional car rental services that exceed your expectations
+            We're committed to providing exceptional car hire services that exceed your expectations
           </p>
         </div>
 
