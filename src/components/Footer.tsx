@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Twitter, Linkedin, Phone, Mail, MapPin } from "lucide-react";
-import msipLogo from "@/assets/msip-logo.jpeg";
+import msipLogo from "@/assets/msip-logo.jpg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
