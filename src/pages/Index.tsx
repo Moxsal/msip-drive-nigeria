@@ -135,54 +135,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Fleet Showcase Section */}
-        <section className="py-16 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-12">
-                <Badge className="mb-4">Our Fleet</Badge>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Professional Vehicles Ready for Hire
-                </h2>
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  From executive sedans to spacious vans, our diverse fleet is maintained to the highest standards
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-                <div className="relative rounded-lg overflow-hidden shadow-large">
-                  <img 
-                    src={companyFleet} 
-                    alt="MSIP Global Services Limited - Premium fleet at company building"
-                    className="w-full h-auto object-cover animate-fade-in"
-                  />
-                </div>
-                <div className="grid grid-cols-1 gap-6">
-                  <div className="relative rounded-lg overflow-hidden shadow-large">
-                    <img 
-                      src={companyBuilding} 
-                      alt="MSIP Global Services office with Toyota Sienna vans"
-                      className="w-full h-full object-cover animate-fade-in"
-                    />
-                  </div>
-                  <div className="relative rounded-lg overflow-hidden shadow-large">
-                    <img 
-                      src={companyOffice} 
-                      alt="MSIP Global Services Limited building with premium vehicles"
-                      className="w-full h-full object-cover animate-fade-in"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div className="text-center">
-                <Button variant="hero" size="lg" asChild>
-                  <a href="/fleet">View Full Fleet</a>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
 
         <WhyChooseUs />
 

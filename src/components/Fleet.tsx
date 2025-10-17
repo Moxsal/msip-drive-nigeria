@@ -1,12 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Users, Fuel, Settings } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 import toyotaCorolla from "@/assets/toyota-corolla.jpg";
 import toyotaCamry from "@/assets/toyota-camry.jpg";
 import toyotaPrado from "@/assets/toyota-prado.jpg";
 import lexusRx from "@/assets/lexus-rx.jpg";
 import mercedesBenz from "@/assets/mercedes-benz.jpg";
 import toyotaHighlander from "@/assets/toyota-highlander.jpg";
+import companyFleet from "@/assets/company-building-fleet.jpg";
+import companyBuilding from "@/assets/company-building-sienna.jpg";
+import companyOffice from "@/assets/company-office-van.jpg";
+import companyFortuner from "@/assets/company-building-fortuner.jpg";
 
 const cars = [
   {
@@ -69,8 +74,56 @@ const Fleet = () => {
   return (
     <section id="fleet" className="py-20 bg-background">
       <div className="container mx-auto px-4">
+        {/* Company Fleet Images Section */}
+        <div className="max-w-6xl mx-auto mb-16">
+          <div className="text-center mb-12">
+            <Badge className="mb-4">Our Fleet</Badge>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+              Professional Vehicles Ready for Hire
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              From executive sedans to spacious vans, our diverse fleet is maintained to the highest standards
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div className="relative rounded-lg overflow-hidden shadow-large">
+              <img 
+                src={companyFleet} 
+                alt="MSIP Global Services Limited - Premium fleet at company building"
+                className="w-full h-auto object-cover animate-fade-in"
+              />
+            </div>
+            <div className="grid grid-cols-1 gap-6">
+              <div className="relative rounded-lg overflow-hidden shadow-large">
+                <img 
+                  src={companyBuilding} 
+                  alt="MSIP Global Services office with Toyota Sienna vans"
+                  className="w-full h-full object-cover animate-fade-in"
+                />
+              </div>
+              <div className="relative rounded-lg overflow-hidden shadow-large">
+                <img 
+                  src={companyOffice} 
+                  alt="MSIP Global Services Limited building with premium vehicles"
+                  className="w-full h-full object-cover animate-fade-in"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="relative rounded-lg overflow-hidden shadow-large mb-8">
+            <img 
+              src={companyFortuner} 
+              alt="MSIP Global Services Limited office with premium Toyota Fortuner"
+              className="w-full h-auto object-cover animate-fade-in"
+            />
+          </div>
+        </div>
+
+        {/* Individual Vehicle Fleet */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Our Premium Fleet</h2>
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Available Vehicles</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Professional vehicles available for corporate, airport, and private hire across Nigeria
           </p>
