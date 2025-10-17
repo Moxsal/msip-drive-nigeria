@@ -5,10 +5,10 @@ import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import About from "@/components/About";
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Award, Users, Heart, Shield, Check } from "lucide-react";
-import fleetShowcase from "@/assets/fleet-showcase.png";
-import hiaceVan from "@/assets/hiace-van.png";
-import siennaGray from "@/assets/sienna-gray.png";
-import fortunerWhite from "@/assets/fortuner-white.png";
+import companyBuilding from "@/assets/company-building-fleet.jpg";
+import companyOffice from "@/assets/company-office-van.jpg";
+import companyFleet from "@/assets/company-building-sienna.jpg";
+import companyFortuner from "@/assets/company-building-fortuner.jpg";
 
 const AboutPage = () => {
   return (
@@ -67,52 +67,52 @@ const AboutPage = () => {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
                 <Card className="overflow-hidden hover:shadow-medium transition-smooth">
                   <img 
-                    src={fleetShowcase} 
-                    alt="Msip Global Services full fleet showcase - Multiple vehicles available for hire in Ogbomoso" 
-                    className="w-full h-48 object-cover"
+                    src={companyBuilding} 
+                    alt="MSIP Global Services Limited office with Toyota Sienna fleet" 
+                    className="w-full h-64 object-cover"
                   />
                   <CardContent className="p-4">
-                    <h3 className="font-heading font-bold">Our Complete Fleet</h3>
-                    <p className="text-sm text-muted-foreground">Diverse range of vehicles for every occasion</p>
+                    <h3 className="font-heading font-bold">Our Company Building</h3>
+                    <p className="text-sm text-muted-foreground">Professional facilities in Ogbomoso, Nigeria</p>
                   </CardContent>
                 </Card>
 
                 <Card className="overflow-hidden hover:shadow-medium transition-smooth">
                   <img 
-                    src={fortunerWhite} 
-                    alt="Toyota Fortuner - Executive SUV available for hire" 
-                    className="w-full h-48 object-cover"
+                    src={companyFleet} 
+                    alt="MSIP Global Services premium fleet at office building" 
+                    className="w-full h-64 object-cover"
                   />
                   <CardContent className="p-4">
-                    <h3 className="font-heading font-bold">Executive SUVs</h3>
-                    <p className="text-sm text-muted-foreground">Premium vehicles for business and VIP travel</p>
+                    <h3 className="font-heading font-bold">Premium Fleet</h3>
+                    <p className="text-sm text-muted-foreground">Multiple vehicles available for hire</p>
                   </CardContent>
                 </Card>
 
                 <Card className="overflow-hidden hover:shadow-medium transition-smooth">
                   <img 
-                    src={hiaceVan} 
-                    alt="Toyota Hiace - Spacious van for group transport" 
-                    className="w-full h-48 object-cover"
+                    src={companyOffice} 
+                    alt="MSIP Global Services Toyota Sienna van at office" 
+                    className="w-full h-64 object-cover"
                   />
                   <CardContent className="p-4">
-                    <h3 className="font-heading font-bold">Group Transport</h3>
-                    <p className="text-sm text-muted-foreground">Spacious vans for corporate and family trips</p>
+                    <h3 className="font-heading font-bold">Executive Transport</h3>
+                    <p className="text-sm text-muted-foreground">Toyota Sienna for comfortable group travel</p>
                   </CardContent>
                 </Card>
 
-                <Card className="overflow-hidden hover:shadow-medium transition-smooth md:col-span-2 lg:col-span-1">
+                <Card className="overflow-hidden hover:shadow-medium transition-smooth">
                   <img 
-                    src={siennaGray} 
-                    alt="Toyota Sienna - Comfortable minivan for families" 
-                    className="w-full h-48 object-cover"
+                    src={companyFortuner} 
+                    alt="MSIP Global Services Toyota Fortuner SUV" 
+                    className="w-full h-64 object-cover"
                   />
                   <CardContent className="p-4">
-                    <h3 className="font-heading font-bold">Family Vehicles</h3>
-                    <p className="text-sm text-muted-foreground">Comfortable and spacious for family journeys</p>
+                    <h3 className="font-heading font-bold">Luxury SUVs</h3>
+                    <p className="text-sm text-muted-foreground">Premium vehicles for VIP and corporate clients</p>
                   </CardContent>
                 </Card>
               </div>

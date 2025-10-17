@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { User, Plane, Briefcase, Car, Check } from "lucide-react";
-import servicesBanner from "@/assets/services-banner.png";
+import companyBuilding from "@/assets/company-building-sienna.jpg";
 
 const services = [
   {
@@ -73,8 +73,8 @@ const Services = () => {
         {/* Services Banner */}
         <div className="max-w-5xl mx-auto mb-12">
           <img 
-            src={servicesBanner} 
-            alt="Msip Global Services - Auto & Chauffeur Services in Ogbomoso"
+            src={companyBuilding} 
+            alt="MSIP Global Services Limited - Automobile and Logistics Company in Nigeria"
             className="rounded-lg shadow-large w-full h-auto object-cover animate-fade-in"
           />
         </div>

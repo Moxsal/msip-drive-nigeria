@@ -19,10 +19,10 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import companySuv from "@/assets/company-suv.png";
-import missionVision from "@/assets/mission-vision.png";
-import fleetShowcase from "@/assets/fleet-showcase.png";
-import fortunerWhite from "@/assets/fortuner-white.png";
-import siennaBlue from "@/assets/sienna-blue.png";
+import companyBuilding from "@/assets/company-building-sienna.jpg";
+import companyFleet from "@/assets/company-building-fleet.jpg";
+import companyOffice from "@/assets/company-office-van.jpg";
+import companyFortuner from "@/assets/company-building-fortuner.jpg";
 
 const Index = () => {
   const testimonials = [
@@ -121,8 +121,8 @@ const Index = () => {
                 </div>
                 <div className="relative">
                   <img 
-                    src={fortunerWhite} 
-                    alt="Msip Global Services - Toyota Fortuner available for hire in Ogbomoso"
+                    src={companyFortuner} 
+                    alt="MSIP Global Services Limited office with premium Toyota Fortuner"
                     className="rounded-lg shadow-large w-full h-auto object-cover animate-fade-in"
                   />
                   <div className="absolute -bottom-6 -right-6 bg-primary text-background p-6 rounded-lg shadow-large max-w-xs hidden md:block">
@@ -152,23 +152,23 @@ const Index = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                 <div className="relative rounded-lg overflow-hidden shadow-large">
                   <img 
-                    src={fleetShowcase} 
-                    alt="Msip Global Services fleet - Multiple vehicles available for hire"
+                    src={companyFleet} 
+                    alt="MSIP Global Services Limited - Premium fleet at company building"
                     className="w-full h-auto object-cover animate-fade-in"
                   />
                 </div>
                 <div className="grid grid-cols-1 gap-6">
                   <div className="relative rounded-lg overflow-hidden shadow-large">
                     <img 
-                      src={siennaBlue} 
-                      alt="Toyota Sienna available for hire - Msip Global Services"
+                      src={companyBuilding} 
+                      alt="MSIP Global Services office with Toyota Sienna vans"
                       className="w-full h-full object-cover animate-fade-in"
                     />
                   </div>
                   <div className="relative rounded-lg overflow-hidden shadow-large">
                     <img 
-                      src={missionVision} 
-                      alt="Msip Global Services Mission & Vision"
+                      src={companyOffice} 
+                      alt="MSIP Global Services Limited building with premium vehicles"
                       className="w-full h-full object-cover animate-fade-in"
                     />
                   </div>

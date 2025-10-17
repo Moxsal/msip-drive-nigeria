@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Calendar, MapPin, Car } from "lucide-react";
-import heroImage from "@/assets/welcome-hero.png";
+import heroImage from "@/assets/company-building-fleet.jpg";
 
 const Hero = () => {
   return (
@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Professional car hire services in Ogbomoso - Msip Global Services"
+          alt="MSIP Global Services Limited building - Professional car hire in Ogbomoso, Nigeria"
           className="w-full h-full object-cover animate-fade-in"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/60"></div>
