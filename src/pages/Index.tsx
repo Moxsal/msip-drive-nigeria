@@ -18,11 +18,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import companySuv from "@/assets/company-suv.png";
-import companyBuilding from "@/assets/company-building-sienna.jpg";
-import companyFleet from "@/assets/company-building-fleet.jpg";
-import companyOffice from "@/assets/company-office-van.jpg";
-import companyFortuner from "@/assets/company-building-fortuner.jpg";
 
 const Index = () => {
   const testimonials = [
@@ -94,46 +89,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Company Introduction with Image */}
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div>
-                  <Badge className="mb-4">About Msip Global Services Ltd</Badge>
-                  <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                    Professional Car Hire Services in Ogbomoso, Oyo State
-                  </h2>
-                  <p className="text-muted-foreground leading-relaxed mb-4">
-                    <strong>Msip Global Services Ltd</strong> is a trusted Nigerian car hire and chauffeur company, proudly serving clients in Ogbomoso, Oyo State, and across Nigeria.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed mb-4">
-                    We specialize in executive car hire, airport transfers, inter-state journeys, and corporate transport solutions, offering well-maintained vehicles and professional drivers who understand punctuality, safety, and discretion.
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-4 mt-6">
-                    <Button variant="hero" size="lg" asChild>
-                      <a href="#booking">Request a Hire</a>
-                    </Button>
-                    <Button variant="outline" size="lg" asChild>
-                      <a href="tel:+2348062237960">Call Us Now</a>
-                    </Button>
-                  </div>
-                </div>
-                <div className="relative">
-                  <img 
-                    src={companyFortuner} 
-                    alt="MSIP Global Services Limited office with premium Toyota Fortuner"
-                    className="rounded-lg shadow-large w-full h-auto object-cover animate-fade-in"
-                  />
-                  <div className="absolute -bottom-6 -right-6 bg-primary text-background p-6 rounded-lg shadow-large max-w-xs hidden md:block">
-                    <p className="text-2xl font-heading font-bold">10+ Years</p>
-                    <p className="text-sm">Of Excellence in Car Hire Services</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
 
         <WhyChooseUs />
