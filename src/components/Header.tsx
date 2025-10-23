@@ -17,7 +17,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img src={msipLogo} alt="Msip Global Services" className="h-12 w-12 object-contain" />
-            <div className="hidden sm:block">
+            <div>
               <div className="font-heading text-lg md:text-xl font-bold text-foreground uppercase">MSIP GLOBAL SERVICES LIMITED</div>
               <div className="text-xs text-muted-foreground">Transportation and Logistics Business</div>
             </div>
